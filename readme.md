@@ -9,5 +9,5 @@ also heavily inspired by vkbottle.
 
 to install the latest unstable version of foxford wrapper, install [git-scm](https://git-scm.com/downloads) and run the following:
 ```
-pip install git+https://github.com/ro-py/ro.py.git
+pip install git+https://github.com/frostx-official/foxford.git
 ```
