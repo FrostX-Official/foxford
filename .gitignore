@@ -4,3 +4,6 @@
 dist/
 build/
 src/foxford.egg-info/
+publish.bat
+publish-test.bat
+build.bat
