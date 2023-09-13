@@ -8,10 +8,12 @@
 </p>
 
 <p align="center">
-  <img alt="PyPI - Downloads" src="https://img.shields.io/pypi/dw/foxford">
-  <img alt="GitHub issues by-label" 
+  <img alt="PyPI Downloads" src="https://img.shields.io/pypi/dm/foxford?logo=pypi&logoColor=white&cacheSeconds=0">
+  <img alt="GitHub Issues" 
   src="https://img.shields.io/github/issues/frostx-official/foxford/bug">
+  <img alt="PyPI Version" src="https://img.shields.io/pypi/v/foxford">
   <img alt="PyPI" src="https://img.shields.io/pypi/v/foxford?color=green&label=PyPI">
+  <img alt="GitHub Stars" src="https://img.shields.io/github/stars/frostx-official/foxford">
 </p>
 
 ## Simple Example
