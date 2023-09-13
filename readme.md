@@ -16,7 +16,7 @@
   <img src="https://img.shields.io/github/languages/code-size/frostx-official/foxford?label=repo%20size">
 </p>
 
-## Simple Example
+## Example / Boilerplate
 
 ```python
 from foxford import Client
