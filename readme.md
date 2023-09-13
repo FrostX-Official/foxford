@@ -7,7 +7,7 @@
     <br>
 </p>
 
-<p style="text-align: center; margin: 0 auto; width: 40%;">
+<p align="center">
   <img alt="PyPI Downloads" src="https://img.shields.io/pypi/dm/foxford?logo=pypi&logoColor=white&cacheSeconds=0">
   <img alt="GitHub Issues" 
   src="https://img.shields.io/github/issues/frostx-official/foxford/bug">
