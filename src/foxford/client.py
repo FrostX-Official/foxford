@@ -98,3 +98,19 @@ class Client:
             return Level(data=authenticated_user_data)
         else:
             return PartialLevel(data=authenticated_user_data)
+        
+    async def custom_request(self, method, url, *args):
+        """
+        Send method request to url with *args
+
+        Example:
+            await custom_request("GET", "https://foxford.ru/api/current_reminders")
+
+        Arguments:
+            method: one of the methods: GET, POST, PUT, DELETE
+            url: url to send request to
+        """
+        authenticated_user_response = await self._requests.request(method=method, url=url, *args)
+        authenticated_user_data = authenticated_user_response.json()
+
+        return authenticated_user_data
