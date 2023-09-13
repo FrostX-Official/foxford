@@ -1,5 +1,5 @@
 <p align="center" width="100%">
-    <a href="https://github.com/rostx-official/foxford">
+    <a href="https://github.com/frostx-official/foxford">
         <img src="https://raw.githubusercontent.com/frostx-official/foxford/main/resources/logo.png" alt="foxford wrapper logo" height="128em" />
     </a>
     <br>
