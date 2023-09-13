@@ -1,0 +1,17 @@
+.idea/
+__pycache__/
+vscode/
+venv/
+*.pyc
+*.pyo
+*.bak
+*.wxg#
+*.??~
+build/
+dist/
+dist_old/
+other/
+udocs/
+build.*
+docsbuild.bat
+*.egg-info
