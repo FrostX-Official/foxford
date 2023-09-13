@@ -15,6 +15,7 @@ from .level import Level
 from .utilities.exceptions import BadRequest, NotFound, UserNotFound
 from .utilities.requests import Requests
 
+import asyncio
 
 class Client:
     """
@@ -24,14 +25,17 @@ class Client:
         requests: The requests object, which is used to send requests to Foxford endpoints.
     """
 
-    def __init__(self, cookie: str = None, base_url: str = "foxford.ru"):
+    def __init__(self, cookie: str = None):
         """
+        It is recommended to get cookies with EditThisCookie plugin thru export button
+
         Arguments:
-            cookie: A Foxford cookie to login with.
-            base_url: The base URL to use when sending requests.
+            cookie: A Foxford cookie to login with. (_fox_session cookie)
         """
         self._requests: Requests = Requests()
         self.requests: Requests = self._requests
+
+        self.loop = asyncio.get_event_loop()
 
         if cookie:
             self.set_cookie(cookie)
@@ -46,15 +50,16 @@ class Client:
         """
         Authenticates the client with the passed Foxford cookie.
         This method does not send any requests and will not throw if the cookie is invalid.
+        It is recommended to get cookies with EditThisCookie plugin thru export button
 
         Arguments:
             cookie: A Foxford cookie to login with.
 
         """
-        self._requests.session.cookies = cookie
+        self._requests.session.cookies["_fox_session"] = cookie
 
     # Users
-    async def get_authenticated_user(
+    async def get_user(
             self, expand: bool = True
     ) -> Union[User, PartialUser]:
         """
@@ -74,7 +79,7 @@ class Client:
         else:
             return PartialUser(data=authenticated_user_data)
         
-    async def get_authenticated_user_level(
+    async def get_level(
             self, expand: bool = True
             ) -> Union[Level, PartialLevel]:
         """
