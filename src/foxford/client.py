@@ -91,14 +91,26 @@ class Client:
         Returns:
             The authenticated user's level.
         """
-        authenticated_user_response = await self._requests.get(url="https://foxford.ru/api/user/level")
-        authenticated_user_data = authenticated_user_response.json()
+        level_response = await self._requests.get(url="https://foxford.ru/api/user/level")
+        level_data = level_response.json()
 
         if expand:
-            return Level(data=authenticated_user_data)
+            return Level(data=level_data)
         else:
-            return PartialLevel(data=authenticated_user_data)
-        
+            return PartialLevel(data=level_data)
+
+    async def get_ulms_token(self):
+        """
+        Get ulms token for your usages
+
+        Returns:
+            ulms_token: json with ["access_token"] and ["token_type"]
+        """
+        token_response = await self._requests.post(url="https://foxford.ru/api/user/ulms_token")
+        token_data = token_response.json()
+
+        return token_data
+    
     async def custom_request(self, method, url, *args):
         """
         Send method request to url with *args
@@ -110,7 +122,7 @@ class Client:
             method: one of the methods: GET, POST, PUT, DELETE
             url: url to send request to
         """
-        authenticated_user_response = await self._requests.request(method=method, url=url, *args)
-        authenticated_user_data = authenticated_user_response.json()
+        response = await self._requests.request(method=method, url=url, *args)
+        data = response.json()
 
-        return authenticated_user_data
+        return data

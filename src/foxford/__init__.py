@@ -18,7 +18,7 @@ __copyright__ = "Copyright 2023-present frostx"
 __version__ = "1.1"
 
 import logging
-from typing import NamedTuple
+from typing import NamedTuple, Union
 
 try:
     from typing import Literal
@@ -27,6 +27,10 @@ except ImportError:
 
 from .client import Client
 from .utilities.exceptions import *
+
+from browser_cookie3 import ChromiumBased, FirefoxBased, Safari
+from requests.utils import dict_from_cookiejar
+from browser_cookie3 import Opera
 
 class VersionInfo(NamedTuple):
     """
@@ -48,3 +52,19 @@ version_info: VersionInfo = VersionInfo(
 )
 
 logging.getLogger(__name__).addHandler(logging.NullHandler())
+
+def get_cookie(browser: Union[FirefoxBased, ChromiumBased, Safari]) -> None:
+        """
+        Get "cookie" from "browser" thru browser_cookie3 library.
+
+        Arguments:
+            browser: Browser to get cookies from (where you logged in with foxford session)
+
+        Returns:
+            cookie: The _fox_session cookie you need
+                    in set_cookie method or Client class init
+        """
+        try:
+            return dict_from_cookiejar(browser().load())["_fox_session"]
+        except:
+            raise KeyError("No _fox_session cookie found in cookie jar")
