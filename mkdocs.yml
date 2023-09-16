@@ -6,6 +6,8 @@ repo_name: frostx-official/foxford
 repo_url: https://github.com/frostx-official/foxford
 edit_uri: edit/master/docs/
 copyright: <a href="https://github.com/frostx-official/foxford/blob/master/LICENSE" target="_blank" rel="noopener">View maintainers</a>
+docs_dir: 'docs/en'                           # Where to find the English markdown files
+#site_dir: 'en'                      # Where to put the English HTML files
 
 extra:
   generator: false
@@ -23,11 +25,11 @@ nav:
 extra:
   alternate:
     - name: English
-      link: /en/
+      link: /en/latest
       lang: en
 
     - name: Russian
-      link: /ru/
+      link: /ru/latest
       lang: ru
 
 theme:
@@ -64,6 +66,10 @@ theme:
   favicon: logo.svg
 
   language: en
+
+plugins:
+  - search:                                         
+      lang: en
 
 markdown_extensions:
   - admonition:
