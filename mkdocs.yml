@@ -25,11 +25,11 @@ nav:
 extra:
   alternate:
     - name: English
-      link: /en/latest
+      link: /en/
       lang: en
 
     - name: Russian
-      link: /ru/latest
+      link: /ru/
       lang: ru
 
 theme:
