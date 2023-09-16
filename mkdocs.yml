@@ -13,12 +13,12 @@ extra:
 
 nav:
   - Documentation:
-      - index.md
-  - Tutorial:
-      - tutorial/index.md
-      - First Interaction: tutorial/first-interaction.md
-      - Recommended IDE: tutorial/recommended-ide.md
-      - FAQ: tutorial/faq.md
+     - index.md
+#   - Tutorial:
+#       - tutorial/index.md
+#       - First Interaction: tutorial/first-interaction.md
+#       - Recommended IDE: tutorial/recommended-ide.md
+#       - FAQ: tutorial/faq.md
 
 extra:
   alternate:
@@ -32,8 +32,8 @@ extra:
 
 theme:
   name: material
-  language: en
-  locale: en # idk why there's language and locale instead of just language
+  logo: logo.svg
+  favicon: logo.svg
 
   features:
     - navigation.instant
@@ -62,9 +62,6 @@ theme:
   font:
     text: Roboto Mono
     code: Monaco
-
-  logo: logo.svg
-  favicon: logo.svg
 
 markdown_extensions:
   - admonition:

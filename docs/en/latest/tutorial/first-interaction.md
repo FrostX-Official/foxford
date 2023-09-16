@@ -3,13 +3,13 @@
 Welcome to the first part of tutorial :D
 <br>the usage of `Client` will be introduced here.
 
-For the start we should import the important object - `foxford.Client`
+For the start we should import the important object — `foxford.Client`
 
 ```python
 from foxford import Client
 ```
 
-`Client` - tool for making request to Foxford.ru API
+`Client` — tool for making request to foxford.ru API
 
 ## Typification
 
