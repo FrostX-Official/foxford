@@ -31,7 +31,8 @@ async def main():
 ffclient.loop.run_until_complete(main())
 ```
 
-## No documentation yet. :(
+## Documentation
+You can look at documentation here: https://foxford.readthedocs.io
 
 # Disclaimer
 this "framework" uses most of the ro.py's code,<br>
