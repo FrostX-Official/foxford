@@ -1,6 +1,6 @@
 <p align="center" width="100%">
     <a href="https://github.com/frostx-official/foxford">
-        <img src="https://raw.githubusercontent.com/frostx-official/foxford/main/resources/logo.png" alt="foxford wrapper logo" height="128em" />
+        <img src="https://raw.githubusercontent.com/frostx-official/foxford/main/resources/logo.svg" alt="foxford wrapper logo" height="128em" />
     </a>
     <br>
     <b>Foxford Wrapper</b>
@@ -28,7 +28,7 @@ async def main():
     user = await ffclient.get_user()
     print(user.id)
 
-ffclient.loop.run_until_complete(main())
+asyncio.run(main())
 ```
 
 ## Documentation

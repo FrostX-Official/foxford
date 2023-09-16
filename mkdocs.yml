@@ -8,14 +8,17 @@ edit_uri: edit/master/docs/
 copyright: <a href="https://github.com/frostx-official/foxford/blob/master/LICENSE" target="_blank" rel="noopener">View maintainers</a>
 
 nav:
+  - Main:
+    - index.md
+
   - English:
     - Index Page:
       - en/index.md
     - Tutorial:
       - en/tutorial/index.md
       - First Interaction: en/tutorial/first-interaction.md
-      - FAQ: ru/tutorial/faq.md
-      - Recommended IDE: ru/tutorial/recommended-ide.md
+      - FAQ: en/tutorial/faq.md
+      - Recommended IDE: en/tutorial/recommended-ide.md
         
   - Русский:
     - Главная:
@@ -24,7 +27,10 @@ nav:
       - ru/tutorial/index.md
       - Первое взаимодействие: ru/tutorial/first-interaction.md
       - FAQ: ru/tutorial/faq.md
-      - Рекомендованные IDE: ru/tutorial/recommended-ide.md
+      - Рекомендуемые IDE: ru/tutorial/recommended-ide.md
+
+extra_javascript:
+  - javascripts/extra.js
 
 extra:
   alternate:
