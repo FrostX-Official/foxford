@@ -1,0 +1,88 @@
+site_name: Foxford
+site_author: FrostX-Official
+site_description: Modern object-oriented asynchronous Python wrapper for the Foxford's web API.
+site_url: https://foxford.rtfd.io/
+repo_name: frostx-official/foxford
+repo_url: https://github.com/frostx-official/foxford
+edit_uri: edit/master/docs/
+copyright: <a href="https://github.com/frostx-official/foxford/blob/master/LICENSE" target="_blank" rel="noopener">View maintainers</a>
+
+extra:
+  generator: false
+  disqus: ""
+
+nav:
+  - Documentation:
+      - index.md
+  - Tutorial:
+      - tutorial/index.md
+      - First Interaction: tutorial/first-interaction.md
+      - Recommended IDE: tutorial/recommended-ide.md
+      - FAQ: tutorial/faq.md
+
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.indexes
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.top
+    - search.suggest
+    - content.code.copy
+
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      accent: blue
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      accent: blue
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to light mode
+
+  font:
+    text: Roboto Mono
+    code: Monaco
+
+  logo: logo.svg
+  favicon: logo.svg
+
+markdown_extensions:
+  - admonition:
+  - md_in_html:
+  - toc:
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+      permalink: ""
+  - pymdownx.magiclink:
+      repo_url_shortener: true
+      repo_url_shorthand: true
+      normalize_issue_symbols: true
+      user: frostx-official
+      repo: foxford
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+      linenums: true
+      guess_lang: true
+  - pymdownx.inlinehilite:
+  - pymdownx.superfences:
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.escapeall:
+      hardbreak: True
+      nbsp: True
+  - pymdownx.details:
+  - pymdownx.tabbed:
+  - pymdownx.saneheaders:
+
+extra_css:
+  - _css/style.css

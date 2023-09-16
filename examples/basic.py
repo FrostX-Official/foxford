@@ -1,11 +1,11 @@
 from browser_cookie3 import Opera
 from foxford import get_cookie
 from foxford import Client
+import asyncio
 
-ffclient = Client(get_cookie(Opera))
+client = Client(get_cookie(Opera))
 
 async def main():
-    user = await ffclient.get_user()
-    print(user.full_name)
+    print(await client.get_user())
 
-ffclient.loop.run_until_complete(main())
+asyncio.run(main())
