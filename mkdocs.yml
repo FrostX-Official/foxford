@@ -13,10 +13,9 @@ nav:
       - en/index.md
     - Tutorial:
       - en/tutorial/index.md
-      - First Interaction:
-        - First Interaction: en/tutorial/first-interaction.md
-        - FAQ: ru/tutorial/faq.md
-        - Recommended IDE: ru/tutorial/recommended-ide.md
+      - First Interaction: en/tutorial/first-interaction.md
+      - FAQ: ru/tutorial/faq.md
+      - Recommended IDE: ru/tutorial/recommended-ide.md
         
   - Русский:
     - Главная:
