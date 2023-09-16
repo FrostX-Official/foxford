@@ -8,12 +8,12 @@
 </p>
 
 <p align="center">
-  <img alt="PyPI Downloads" src="https://img.shields.io/pypi/dm/foxford?logo=pypi&logoColor=white&cacheSeconds=0">
-  <img alt="GitHub Issues" 
-  src="https://img.shields.io/github/issues/frostx-official/foxford/bug">
-  <img alt="PyPI Version" src="https://img.shields.io/pypi/v/foxford?color=green&label=PyPI">
-  <img alt="GitHub Stars" src="https://img.shields.io/github/stars/frostx-official/foxford">
+  <img src="https://img.shields.io/pypi/dm/foxford?logo=pypi&logoColor=white&cacheSeconds=0">
+  <img src="https://img.shields.io/github/issues/frostx-official/foxford/bug">
+  <img src="https://img.shields.io/pypi/v/foxford?color=green&label=PyPI">
+  <img src="https://img.shields.io/github/stars/frostx-official/foxford">
   <img src="https://img.shields.io/github/languages/code-size/frostx-official/foxford?label=repo%20size">
+  <img src="https://readthedocs.org/projects/foxford/badge/?version=latest">
 </p>
 
 ## Example / Boilerplate
