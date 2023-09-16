@@ -23,7 +23,7 @@ As has already become clear from the picture above, to call a method, the `await
 
 ## First request
 
-For the `Client` initialization вам you need a cookie (or how we call it "token")
+For the `Client` initialization, you need a cookie (or how we call it "token")
 
 Let's wrap our future request in a basic way of executing asynchronous code:
 
