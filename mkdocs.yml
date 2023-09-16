@@ -7,33 +7,41 @@ repo_url: https://github.com/frostx-official/foxford
 edit_uri: edit/master/docs/
 copyright: <a href="https://github.com/frostx-official/foxford/blob/master/LICENSE" target="_blank" rel="noopener">View maintainers</a>
 
-extra:
-  generator: false
-  disqus: ""
-
 nav:
-  - Documentation:
-     - index.md
-#   - Tutorial:
-#       - tutorial/index.md
-#       - First Interaction: tutorial/first-interaction.md
-#       - Recommended IDE: tutorial/recommended-ide.md
-#       - FAQ: tutorial/faq.md
+  - English:
+    - Index Page:
+      - en/index.md
+    - Tutorial:
+      - en/tutorial/index.md
+      - First Interaction:
+        - First Interaction: en/tutorial/first-interaction.md
+        - FAQ: ru/tutorial/faq.md
+        - Recommended IDE: ru/tutorial/recommended-ide.md
+        
+  - Русский:
+    - Главная:
+      - ru/index.md
+    - Туториал:
+      - ru/tutorial/index.md
+      - Первое взаимодействие: ru/tutorial/first-interaction.md
+      - FAQ: ru/tutorial/faq.md
+      - Рекомендованные IDE: ru/tutorial/recommended-ide.md
 
 extra:
   alternate:
     - name: English
-      link: /en/latest/
+      link: /en/
       lang: en
 
-    - name: Russian
-      link: /ru/latest/
+    - name: Русский
+      link: /ru/
       lang: ru
 
 theme:
   name: material
   logo: logo.svg
   favicon: logo.svg
+  custom_dir: docs_theme
 
   features:
     - navigation.instant
